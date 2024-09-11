@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    align-items: center;
+    }
+
+    header {
+      min-height: 150px;  
+      background-color: #333;
+      color: white;
+      text-align: center;
+      grid-column: span 3;
+    }
+
+    header h1 {
+        margin: 30px;
+    }
+
+    nav ul {
+        list-style: none;
+
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 40px;
+    }
+
+    section {
+      background-color: #334;
+      color: white;
+      text-align: center;  
+      grid-column: span 3;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      grid-column: span 3;
+    }
+  </style>
+</head>
+    <body>
+    <main class="grid-container">
+        <header>
+            <h1 class="rubrik">Welcome to My Webpage</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+            <h2>About Me</h2>
+            <p>This is some information about me. I am a web developer who loves creating websites.</p>
+        </section>
+
+        <footer>
+        <p>Footer information goes here</p>
+        </footer>
+    </main>
+</body>
+</html>
